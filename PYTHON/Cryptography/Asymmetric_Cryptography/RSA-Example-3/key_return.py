@@ -11,5 +11,6 @@ def keyReturn():
     with open("KEYS/privateKey.pem", "rb") as private:
         privateKey = rsa.PrivateKey.load_pkcs1(private.read())
 
-    return print(b"\nThis is the private key: ".decode()
-    ,privateKey,"\n\nAnd this is the public key: " , publicKey,"\n")
+    return publicKey, privateKey
+    #return print(b"\nThis is the private key: ".decode()
+    #,privateKey,"\n\nAnd this is the public key: " , publicKey,"\n")
