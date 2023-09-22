@@ -1,0 +1,45 @@
+V "GNAT Lib v11"
+P ZX
+
+RN
+
+U i_stack%b		i_stack.adb		ae4ddd82 NE OO PK
+
+U i_stack%s		i_stack.ads		83910140 EE NE OO PK
+
+D i_stack.ads		20221103120057 83910140 i_stack%s
+D i_stack.adb		20221103115404 2ddcdcc2 i_stack%b
+D system.ads		20220421075852 a2da961d system%s
+G a e
+G c Z s b [push i_stack 33 14 none]
+G c Z s b [pop i_stack 34 14 none]
+G c Z s b [top i_stack 35 13 none]
+G c Z s b [empty i_stack 36 13 none]
+G c Z s b [full i_stack 37 13 none]
+G c Z s b [clean i_stack 38 14 none]
+G c Z s s [Tstack_data_typeBIP i_stack 42 7 none]
+G c Z s s [int_stackIP i_stack 43 12 none]
+X 1 i_stack.ads
+24K9*I_Stack 42E12 47l5 47e12 2|5b14 51l5 51t12
+27R9*Int_Stack 33r29 34r28 35r20 36r22 37r21 38r30 43c12 46e17 2|7r29 16r28
+. 25r20 35r22 41r21 47r30
+30i4*Max_Size{integer} 42r40 2|9r19 43r23
+33U14*Push 33=19 33>40 2|7b14 13l8 13t12
+33r19 S{27R9} 2|7b19 9r10 10m10 10r20 11m10 11r17
+33i40 I{integer} 2|7b40 11r28
+34U14*Pop 34=18 34<39 2|16b14 22l8 22t11
+34r18 S{27R9} 2|16b18 18r10 19r15 19r22 20m10 20r20
+34i39 I{integer} 2|16b39 19m10
+35V13*Top{integer} 35>17 2|25b13 32l8 32t11
+35r17 S{27R9} 2|25b17 27r10 28r17 28r24
+36V13*Empty{boolean} 36>19 2|35b13 38l8 38t13
+36r19 S{27R9} 2|35b19 37r14
+37V13*Full{boolean} 37>18 2|41b13 44l8 44t12
+37r18 S{27R9} 2|41b18 43r14
+38U14*Clean 38=20 2|47b14 50l8 50t13
+38r20 S{27R9} 2|47b20 49m7
+42A12 Stack_Data_Type(integer)<integer> 45r16
+44i10*Size{integer} 2|9r12 10m12 10r22 11r19 18r12 19r24 20m12 20r22 27r12
+. 28r26 37r16 43r16 49m9
+45a10*Data{42A12} 2|11m12 19r17 28r19
+

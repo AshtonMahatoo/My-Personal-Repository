@@ -1,0 +1,91 @@
+V "GNAT Lib v11"
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+
+U assignment_4%b	assignment_4.adb	84442016 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U assignment_4%s	assignment_4.ads	15faf53c EE NE OO PK
+
+D ada.ads		20220421075852 76789da1 ada%s
+D a-charac.ads		20220421075852 2d3ec45b ada.characters%s
+D a-chlat1.ads		20220421075852 66457d31 ada.characters.latin_1%s
+D a-except.ads		20220421075852 449c9b65 ada.exceptions%s
+D a-flteio.ads		20220421075852 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20220421075852 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20220421075852 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20220421075852 119b8fb3 ada.streams%s
+D a-string.ads		20220421075852 90ac6797 ada.strings%s
+D a-strfix.ads		20220421075852 aeacf44c ada.strings.fixed%s
+D a-strmap.ads		20220421075852 5a88892a ada.strings.maps%s
+D a-tags.ads		20220421075852 9eaa38c6 ada.tags%s
+D a-textio.ads		20220421075852 aef4d56d ada.text_io%s
+D a-tiflio.ads		20220421075852 fcca4daa ada.text_io.float_io%s
+D a-tiinio.ads		20220421075852 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20220421075852 0e9b276f ada.unchecked_conversion%s
+D assignment_4.ads	20221107041227 15faf53c assignment_4%s
+D assignment_4.adb	20221107041238 86273a0f assignment_4%b
+D interfac.ads		20220421075852 edec285f interfaces%s
+D i-cstrea.ads		20220421075852 e53d8b8e interfaces.c_streams%s
+D system.ads		20220421075852 a2da961d system%s
+D s-crtl.ads		20220421075852 0ebbdb71 system.crtl%s
+D s-exctab.ads		20220421075852 54135002 system.exception_table%s
+D s-ficobl.ads		20220421075852 078245e4 system.file_control_block%s
+D s-parame.ads		20220421075852 4752c4cb system.parameters%s
+D s-secsta.ads		20220421075852 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20220421075852 a7318a92 system.soft_links%s
+D s-stache.ads		20220421075852 a37c21ec system.stack_checking%s
+D s-stalib.ads		20220421075852 0f2d51ff system.standard_library%s
+D s-stoele.ads		20220421075852 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220421075852 ed88f8fb system.storage_elements%b
+D s-traent.ads		20220421075852 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220421075852 eea7525d system.unsigned_types%s
+D s-wchcon.ads		20220421075852 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [addition assignment_4 11 14 none]
+G c Z s b [subtraction assignment_4 12 14 none]
+G c Z s b [multiplication assignment_4 13 14 none]
+G c Z s b [division assignment_4 14 14 none]
+G c Z b b [print_anything assignment_4 21 15 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|8r6 8r19 8r37 8r58 9r5 9r18 9r37 9r58
+X 5 a-flteio.ads
+20K13*Float_Text_IO[14|46] 18|8w62 9r62
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 18|8w41 9r41
+X 9 a-string.ads
+16K13*Strings 35e16 18|8r23 9r22
+X 10 a-strfix.ads
+43K21*Fixed 1398e22 18|8w31 9r30
+X 13 a-textio.ads
+58K13*Text_IO 728e16 18|8w10 9r9
+509U14*Put_Line 18|23s9
+X 17 assignment_4.ads
+9K9*Assignment_4 16l5 16e17 18|12b14 57l5 57t17
+11V14*Addition{integer} 11>23 11>36 18|26b14 37l9 37t17
+11i23 A{integer} 18|26b23 29r23
+11i36 B{integer} 18|26b36 29r27
+12V14*Subtraction{integer} 12>26 12>39 18|39b14 43l9 43t20
+12i26 A{integer} 18|39b26 41r23
+12i39 B{integer} 18|39b39 41r25
+13V14*Multiplication{integer} 13>29 13>42 18|45b14 49l9 49t23
+13i29 A{integer} 18|45b29 47r23
+13i42 B{integer} 18|45b42 47r25
+14V14*Division{integer} 14>23 14>36 18|51b14 55l9 55t17
+14i23 A{integer} 18|51b23 53r23
+14i36 B{integer} 18|51b36 53r25
+X 18 assignment_4.adb
+14i5 sum_total{integer} 29m9 36r16 41m9 42r16 47m9 48r16 53m9 54r16
+15i5 sun_total2{integer}
+17f5 sum_total_float{float}
+18f5 sum_total2_float{float}
+21U15 Print_AnyThing 21b15 24l9 24t23
+
