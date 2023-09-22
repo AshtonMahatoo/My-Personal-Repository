@@ -7,7 +7,7 @@ from cryptography.fernet import Fernet
 #We are creating an encryption key and storing it in the variable "symmetric_key"
 symmetric_key = Fernet.generate_key()
 
-# This "fernet_key" variable will storing an instance of the "symmetric_key" variable created eariler.  
+# This "fernet_key" variable will store an instance of the "symmetric_key" variable created eariler.  
 fernet_key = Fernet(symmetric_key)
 
 #The encrypt() method is used to encode the message and store the output in the "message_for_encryption" variable. 
