@@ -8,7 +8,7 @@ publicKey, privateKey = keyReturn()
 
 message = input("What is your message??")
 ciphertext = encryption(message, publicKey)
-with open("KEYS/ciphertext.txt", "wb") as file:
+with open("TEXT/ciphertext.txt", "wb") as file:
     file.write(ciphertext)
     
 plain_text = decryption(ciphertext, privateKey)
