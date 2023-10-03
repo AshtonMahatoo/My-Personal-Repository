@@ -1,9 +1,10 @@
-# Single key encryption
+"""
+Ashton Mahatoo
 
+"""
 import os
 import fileinput
 from cryptography.fernet import Fernet
-from fileInput import file_Input
 
 """ 
 * Fernet uses symmetric encryption where only one key (a secret key) is used to both encrypt and decrypt electronic data. 
@@ -18,8 +19,15 @@ from fileInput import file_Input
 
 ############################################ Start of Encryption ######################################################
 
+### This block of code takes in a file from the user 
+inputFileName = input(" Please enter the source filename you would like to encrypt!!: ")
+inputFile = open(inputFileName, "rb")
 
-file_Input()
+read_content =inputFile.read()
+
+with open("New_File_Output.txt", "wb")as file: # This New_File_Output.txt stores the content of the file entered in the Terminal
+    file.write(read_content)
+
 
 ###### Creates key ######
 key = Fernet.generate_key() 
@@ -82,3 +90,4 @@ decrypted = fernet_key.decrypt(encrypted_file)
 #4
 with open('Plain_Text.decrypted','wb')as decr_file:
     decr_file.write(decrypted)
+    """
