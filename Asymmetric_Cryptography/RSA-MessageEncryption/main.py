@@ -1,3 +1,18 @@
+
+"""
+Ashton Mahatoo
+8/23
+
+This sample code is an example of asymmetric cryptography using the RSA algorithm. 
+Asymmetric will gennerate two different keys, a Public Key and a Private Key. 
+An owner will have 2 keys. A Public Key, which will be openly avaliable to anyone,
+and a Private key, which needs to be kept private by its owner.
+
+For example, an owner (a client) will send its public key to someone(like a server) when requesting data.
+That someone(like a server) would then use the owner's(client's) Public Key to encrypt the data using 
+the owner's(the client's) public key and sends the encrypted data back to the owner (a client).
+The client receives this data and decrypts it.
+"""
 import rsa
 
 

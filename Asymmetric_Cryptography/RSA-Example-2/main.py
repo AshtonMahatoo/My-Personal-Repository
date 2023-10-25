@@ -9,6 +9,7 @@ def generate_keys():
         file.write(private_Key.save_pkcs1('PEM'))
 
 def load_keys():
+    
     with open('keys/public_Key.pem', 'rb') as file:
         public_key = rsa.PublicKey.load_pkcs1(file.read())
 
