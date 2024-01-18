@@ -9,10 +9,10 @@ def keyCreation():
 
     (publicKey, privateKey) = rsa.newkeys(1024)
 
-    with open("KEYS/publicKey.pem", "wb") as public:
+    with open("publicKey.pem", "wb") as public:
         public.write(publicKey.save_pkcs1("PEM"))
 
-    with open("KEYS/privateKey.pem", "wb") as private:
+    with open("privateKey.pem", "wb") as private:
         private.write(privateKey.save_pkcs1("PEM"))
 
     

@@ -5,10 +5,10 @@ import rsa
 
 
 def keyReturn():
-    with open("KEYS/publicKey.pem", "rb") as public:
+    with open("publicKey.pem", "rb") as public:
         publicKey = rsa.PublicKey.load_pkcs1(public.read())
 
-    with open("KEYS/privateKey.pem", "rb") as private:
+    with open("privateKey.pem", "rb") as private:
         privateKey = rsa.PrivateKey.load_pkcs1(private.read())
 
     return publicKey, privateKey
